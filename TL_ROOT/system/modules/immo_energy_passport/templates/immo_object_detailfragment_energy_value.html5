@@ -1,0 +1,12 @@
+
+<?php if ($this->energy_with_hot_water): ?>
+	<div class="fieldLine energy_value">
+		<div class="fieldLabel"><?php echo $GLOBALS['TL_LANG']['tl_immo_objects']['energy_value'][0]; ?></div>
+		<div class="fieldValue">
+			<div class="scale" style="width: 151px; height: 13px; background: url({{env::path}}/system/modules/immo_energy_passport/html/energy_value_scale.gif) no-repeat;">
+				<div style="width: <?php echo 151/400*$this->energy_value; ?>px; border-right: 2px solid #000; height: 100%;"></div>
+			</div>
+			<div class="value"><?php echo $this->energy_value; ?> <span>kWh/(m<sup>2</sup>*a)</span></div>
+		</div>
+	</div>
+<?php endif; ?>

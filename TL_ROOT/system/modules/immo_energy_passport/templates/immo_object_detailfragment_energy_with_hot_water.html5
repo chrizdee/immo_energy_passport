@@ -1,0 +1,7 @@
+
+<?php if ($this->energy_with_hot_water): ?>
+	<div class="fieldLine energy_with_hot_water">
+		<div class="fieldLabel"><?php echo $GLOBALS['TL_LANG']['tl_immo_objects']['energy_with_hot_water'][0]; ?></div>
+		<div class="fieldValue">ja</div>
+	</div>
+<?php endif; ?>
